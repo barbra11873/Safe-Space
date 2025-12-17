@@ -1,0 +1,69 @@
+.reaction-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.reaction-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: #666;
+}
+
+.reaction-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+.reaction-btn.active {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
+  color: #1976d2;
+}
+
+.reaction-btn.active.like-btn {
+  background-color: #e8f5e8;
+  border-color: #27ae60;
+  color: #1e8449;
+}
+
+.reaction-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.reaction-icon {
+  font-size: 16px;
+}
+
+.reaction-count {
+  font-weight: 500;
+  min-width: 12px;
+  text-align: center;
+}
+
+/* For story cards */
+.story-stats .reaction-buttons {
+  gap: 12px;
+}
+
+.story-stats .reaction-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.story-stats .reaction-icon {
+  font-size: 14px;
+}
+
+.story-stats .reaction-count {
+  min-width: 8px;
+}

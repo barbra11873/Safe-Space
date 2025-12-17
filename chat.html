@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+    <div class="chat-header">GBV Awareness Chatbot</div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button id="sendBtn">➤</button>
+    </div>
+  </div>
+
+  <script>
+    const sendBtn = document.getElementById("sendBtn");
+    const userInput = document.getElementById("userInput");
+    const chatBody = document.getElementById("chatBody");
+
+    sendBtn.addEventListener("click", sendMessage);
+    userInput.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") sendMessage();
+    });
+
+    function sendMessage() {
+      const text = userInput.value.trim();
+      if (text === "") return;
+
+      appendMessage("user", text);
+      userInput.value = "";
+
+      setTimeout(() => {
+ appendMessage("bot", getBotResponse(text));
+      }, 800);
+    }
+
+    function appendMessage(sender, message) {
+      const msgDiv = document.createElement("div");
+      msgDiv.classList.add("message", sender);
+      msgDiv.textContent = message;
+      chatBody.appendChild(msgDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function getBotResponse(input) {
+      input = input.toLowerCase();
+
+      if (input.includes("myth")) {
+        return "Myth: Only women experience GBV. Fact: Men and boys can also be victims but are often silent due to stigma.";
+      } 
+      else if (input.includes("help") || input.includes("support")) {
+        return "If you or someone you know needs help, please reach out to GBV hotlines like 1195 in Kenya or visit the nearest support center. You're not alone.";
+      } 
+      else if (input.includes("report")) {
+        return "You can report GBV cases confidentially through Kenya’s 1195 helpline or at local gender desks in police stations.";
+      } 
+      else if (input.includes("abuse") || input.includes("violence")) {
+return "Abuse can be physical, emotional, sexual, or psychological. It’s never acceptable, and support is always available.";
+      } 
+      else if (input.includes("men") || input.includes("male")) {
+        return "Yes, GBV affects men too. Many male survivors face cultural barriers to speaking out, but their experiences are equally valid.";
+      } 
+      else if (input.includes("gbv")) {
+        return "Gender-Based Violence (GBV) refers to harmful acts directed at an individual based on their gender. It includes physical, sexual, emotional, and economic abuse.";
+      } 
+      else {
+        return "I'm here to help you learn about GBV, myths, reporting, and support. Try asking about 'myths', 'reporting', or 'help'.";
+      }
+    }
+    // Show welcome message when chatbot loads
+window.onload = function() {
+  appendMessage("bot", "👋 Hi! I'm Tamara🌸, your GBV Awareness Chatbot — ready to help, listen, and share information.");
+  appendMessage("bot", "You can ask me about myths, reporting GBV, support options, or how GBV affects men and women.");
+};
+ </script>
+    
+
+</body>
+</html>

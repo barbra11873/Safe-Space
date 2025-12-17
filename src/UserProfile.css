@@ -1,0 +1,408 @@
+/* User Profile Styles */
+.user-profile-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem 1rem;
+}
+
+.profile-header {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #36BB24, #4ecdc4, #667eea);
+}
+
+.profile-avatar-section {
+    position: relative;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #36BB24;
+    position: relative;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.default-avatar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #36BB24, #4ecdc4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.upload-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(54, 187, 36, 0.9);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0 0 50% 50%;
+}
+
+.upload-overlay:hover {
+    background: rgba(54, 187, 36, 1);
+}
+
+.profile-info h1 {
+    color: #333;
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.profile-email {
+    color: #666;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #36BB24;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Profile Tabs */
+.profile-tabs {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    gap: 1rem;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 1rem 2rem;
+    border: none;
+    background: transparent;
+    color: #666;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-button:hover {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.tab-button.active {
+    background: linear-gradient(135deg, #36BB24, #2d9a1d);
+    color: white;
+    box-shadow: 0 4px 15px rgba(54, 187, 36, 0.3);
+}
+
+/* Profile Content */
+.profile-content {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.profile-settings {
+    display: grid;
+    gap: 2rem;
+    max-width: 600px;
+}
+
+.setting-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.setting-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.setting-group input,
+.setting-group textarea {
+    padding: 1rem 1.25rem;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.setting-group input:focus,
+.setting-group textarea:focus {
+    outline: none;
+    border-color: #36BB24;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(54, 187, 36, 0.1);
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* User Posts */
+.user-posts h3 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.no-posts {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 3rem;
+}
+
+.posts-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.post-item {
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.post-item:hover {
+    border-color: #36BB24;
+    box-shadow: 0 4px 15px rgba(54, 187, 36, 0.1);
+}
+
+.post-item h4 {
+    color: #333;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.post-item p {
+    color: #666;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.5;
+}
+
+.post-item small {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* Notifications */
+.notifications h3 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.no-notifications {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 3rem;
+}
+
+.notifications-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.notification-item:hover {
+    border-color: #36BB24;
+    box-shadow: 0 4px 15px rgba(54, 187, 36, 0.1);
+}
+
+.notification-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    text-align: center;
+}
+
+.notification-content p {
+    margin: 0 0 0.25rem 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.notification-content small {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* Loading */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-profile-page {
+        padding: 1rem 0.5rem;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+
+    .profile-stats {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .profile-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tab-button {
+        padding: 0.75rem 1rem;
+    }
+
+    .profile-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .posts-list,
+    .notifications-list {
+        gap: 1rem;
+    }
+
+    .post-item,
+    .notification-item {
+        padding: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-profile-page,
+.profile-header,
+.profile-content {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.tab-button.active {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Custom Scrollbar */
+.profile-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.profile-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.profile-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #36BB24, #4ecdc4);
+    border-radius: 10px;
+}
+
+.profile-content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2d9a1d, #26a69a);
+}

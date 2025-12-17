@@ -1,0 +1,69 @@
+.tab-desc .illustration{
+    width: 40%;
+}
+.tab-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 1em;
+    margin: 1em 0;
+}
+.tab-desc:nth-child(even){
+    flex-direction: row-reverse;
+}
+.tab-desc .text{
+    padding: 1em;
+    width:35%;
+    min-width: 300px;
+}
+.tab-desc .text h1{
+    margin: 1em 0;
+}
+.tab-desc .text h4{
+    margin: 0 0 1em 0;
+    color: #3F3D56;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.tab-desc .text .link{
+    background-color: #36BB24;
+    color: white;
+    display: block;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 2em;
+    width: fit-content;
+    margin: 1em 0;
+    border-radius: 10px;
+}
+.tab-desc .text .link span{
+    margin: 0 1em;
+}
+/* // green secton */
+.tab-desc.green{
+    background-color: #a6f2bc9d;
+    margin: 1em;
+    border-radius: 10px;
+}
+.tab-desc.green .text .link{
+    background-color: #ffffff;
+    color: #36BB24;
+    border: 2px solid #36BB24;
+    border-radius: 10px;
+}
+/* //tam tam section */
+.tab-desc.chatBot .text{
+    color: #597081;
+
+}
+.tab-desc.chatBot .text h1{
+    color: #126907;
+    font-size: 1.3em;
+}
+.tab-desc.chatBot .text .link{
+    background-color: #ffffff;
+    color: #FF6905;
+    border-radius: 40px;
+    box-shadow: 0 0 5px #FF6905;
+}

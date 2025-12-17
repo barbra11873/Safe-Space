@@ -1,0 +1,97 @@
+/* hero styles*/
+section.main-content{
+    background-color: #E6F4EA;
+}
+.main-content .circle1{
+    margin-left: 20%;
+    position: absolute;
+    animation: circleAnimation;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    animation-iteration-count: infinite;
+}
+.main-content .circle2{
+    margin-left: 20%;
+    animation: circleAnimation;
+    position: absolute;
+    margin-top: -63px;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-delay: 3s;
+}
+@keyframes circleAnimation {
+    0%{
+        margin-left: 5%;
+    }
+    50%{
+        margin-left: 60%;
+    }
+    100%{
+        margin-left: 5%;
+    }
+}
+.main-content .hero-text{
+    width: fit-content;
+    padding: 10% 0 6em 10%;
+    
+}
+.main-content .hero-text .title{
+    font-size: 55px;
+}
+.main-content .hero-text p{
+    font-size: 25px;
+    width: 40%;
+    margin: 1em 0;
+}
+.main-content #greenPolygon{
+    float: right;
+}
+.main-content #greenPolygon::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.main-content #heroIllustration{
+    position: absolute;
+    width: 422px;
+    border-radius: 50px;
+    height: 70%;
+    min-height: 300px;
+    right: 100px;
+    top: 20%;
+}
+.main-content .hero-text .hero-cta{
+    font-size: 19px;
+    display: block;
+    width: fit-content;
+    padding: 1em 3em;
+    margin: 2em 0;
+    text-align: center;
+    color: white;
+    background-color: #3F3D56;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+    .main-content .hero-text .title{
+        font-size: 45px;
+    }
+    .main-content .hero-text p{
+        font-size: 20px;
+        width: 40%;
+    }
+    .main-content #heroIllustration{
+        width: 322px;
+        height: 60%;
+        min-height: 200px;
+        right: 150px;
+        top: 20%;
+    }
+    .main-content .hero-text{
+        padding: 10% 0 8% 5em
+    }
+}

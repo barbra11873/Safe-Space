@@ -1,0 +1,75 @@
+:root{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter","Poppins",Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+.sec2{
+    background-image: url(assets/images/hand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.sec2 .card{
+    border-radius: 20px;
+    background-color: #0000008f;
+    width: fit-content;
+    max-width: 40%;
+    padding: 1em;
+    
+}
+.sec2 .card .title{
+    color: #ffffff;
+    font-size: 2em;
+    margin: 1em 0;
+    text-transform: capitalize;
+    
+}
+.sec2 .card .text{
+    color: #ffffff;
+    font-size: 1em;
+}
+.sec2 .learn{
+    color: #ffffff;
+    background-color: #3F3D56;
+    padding: 1em 2em;
+    border-radius: 20px;
+    border: none;
+}
+/* forum */
+section.forum{
+    padding: 1em;
+    background-color: #a6f2bc9d;
+    border-radius: 20px;
+    margin: 1em;
+}
+section.forum .title{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 1em 0;
+}
+section.forum .logo-container{
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+}
+section.forum .intro-text{
+    text-align: center;
+    margin: 1em auto;
+    font-size: 1.2em;
+    color: #3F3D56;
+    max-width: 60%;
+}
+section.forum .card-container{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}

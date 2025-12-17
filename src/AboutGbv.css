@@ -1,0 +1,486 @@
+
+section.aboutPageSection{
+    font-family: "Inter",Arial, Helvetica, sans-serif;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+section.aboutPageSection.definition{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 20px;
+}
+section.aboutPageSection.definition .textBlock .title{
+    color: #746CFE;
+    font-size: 5em;
+    margin: .5em 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+section.aboutPageSection.definition .textBlock .text{
+    font-size: 1.7em;
+    margin-bottom: 2em;
+}
+section.aboutPageSection.definition .sectionImage{
+    width: 100%;
+}
+
+section.aboutPageSection.neglect{
+    padding-top: 0;
+    text-align: right;
+    background-color: #E6F4EA;
+}
+section.aboutPageSection.neglect .top{
+    display: flex;
+    gap: 10px;
+}
+section.aboutPageSection.neglect .top .sectionImageContainer{
+    flex: 0 0 30%;
+}
+section.aboutPageSection.neglect .top .sectionImageContainer .sectionImage{
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+    margin: auto 0;
+}
+section.aboutPageSection.neglect .top .title{
+    flex: 0 0 60%;
+    text-align: left;
+    color: #746CFE;
+    font-size: 4.5em;
+    padding: 1em;
+
+}
+section.aboutPageSection.neglect .textContainer{
+    text-align: left;
+}
+section.aboutPageSection.neglect .textContainer .text{
+    margin: 2em 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+section.aboutPageSection.neglect .textContainer .text img{
+    width: 80%;
+    display: block;
+    margin: 1em auto;
+}
+section.aboutPageSection.neglect .textContainer .text .title{
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 1em 0;
+    text-transform: capitalize;
+    
+}
+section.aboutPageSection.types{
+    background-color: #2F2E41;
+}
+section.aboutPageSection.types .top{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+}
+section.aboutPageSection.types .top .title{
+    color: #AFABEE;
+    font-size: 2.5rem;
+    font-weight: 600;
+    flex: 0 0 65%;
+}
+section.aboutPageSection.types .top .sectionImage{
+    flex: 0 0 35%;
+}
+section.aboutPageSection.types .top .sectionImage img{
+    width: 100%;
+}
+section.aboutPageSection.types ul li{
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+section.aboutPageSection.types ul li .title{
+    display: inline-flex;
+    align-items: center;
+}
+section.aboutPageSection.types ul li .title span{
+    color: #746CFE;
+    font-size: 1.2em;
+}
+section.aboutPageSection.types ul li .description{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+section.aboutPageSection.causes h1.title{
+    font-family: "Jua",cursive;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    margin: 1em 0;
+}
+section.aboutPageSection.causes .cardsGridContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    place-items: center;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+    width: fit-content;
+    place-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 3px #AFABEE;
+    
+}
+.cardContainer .titleWrapper .title{
+    font-size: 1.7em;
+    text-align: center;
+}
+.cardContainer .textWrapper{
+    grid-column: 1 / 3;
+}
+.cardContainer .textWrapper .text{
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    font-size: 1.3em;
+}
+.cardContainer .imageWrapper img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    max-width: 200px;
+}
+section.aboutPageSection.victims{
+    padding: 0;
+    margin: 0;
+    background-color: #E6F4EA;
+}
+section.aboutPageSection.victims .top{
+    background-image: url(./assets/images/every1\ 3.png);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    
+}
+section.aboutPageSection.victims .top .colour-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.552);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.aboutPageSection.victims .top .colour-wrapper h1{
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 600;
+}
+section.aboutPageSection.victims .main{
+    padding: 1.5em;
+}
+section.aboutPageSection.victims .main .title{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 1.5em;
+}
+section.aboutPageSection.victims .main ul li{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+section.aboutPageSection.response{
+    background-image: url(./assets/images/responseImage.png);
+    background-size:cover;
+    color: #ffffff;
+    background-color: black;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+section.aboutPageSection.response .colourWrapper{
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.805),rgba(0, 0, 0, 0.515) ,rgba(0, 0, 0, 0.137));
+    width: 100%;
+    height: 100%;
+    padding: 3em 4em;
+    padding-top: 3.5em;
+    padding-bottom: 4em;
+}
+section.aboutPageSection.response h1.title{
+    text-align: center;
+    font-size: 3em;
+    margin: 2em 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 0;
+}
+section.aboutPageSection.response h2.subTitle{
+    text-align: center;
+    font-size: 2em;
+    margin: 2em 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #D6D3FF;
+}
+section.aboutPageSection.response ul{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section.aboutPageSection.response ul li{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+section.aboutPageSection.response ul li .title{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+section.aboutPageSection.response ul li .title img.check{
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+section.aboutPageSection.response ul li .title span{
+    font-size: 1.3em;
+    word-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.6;
+    flex: 1;
+}
+section.aboutPageSection.response ul li .description{
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+    padding-left: 40px;
+}
+
+section.aboutPageSection.prevention{
+    background-image: url(./assets/images/responseImage.png);
+    background-size:cover;
+    color: #ffffff;
+    background-color: #2F2E41;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+section.aboutPageSection.prevention .colourWrapper{
+    background-image: linear-gradient(to top,rgba(47, 46, 65, 0.8),rgba(47, 46, 65, 0.6) ,rgba(47, 46, 65, 0.3));
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    padding-top: 3.5em;
+}
+section.aboutPageSection.prevention h1.title{
+    text-align: center;
+    font-size: 3em;
+    margin: 2em 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 0;
+}
+section.aboutPageSection.prevention h2.subTitle{
+    text-align: center;
+    font-size: 2em;
+    margin: 2em 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #AFABEE;
+}
+section.aboutPageSection.prevention ul li{
+    margin: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+section.aboutPageSection.prevention ul li .title{
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+}
+section.aboutPageSection.prevention ul li .title span{
+    font-size: 1.2em;
+}
+section.aboutPageSection.prevention ul li .description{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.impactCardWrapper{
+    display: flex;
+    box-shadow: 2px 2px 3px #222036;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px;
+    margin: 3em 1em;
+    margin-bottom: 7em;
+    margin-left: 2em;
+    background-image: linear-gradient(to right,#B6D1BE,#E6F4EA);
+    
+}
+.impactCardWrapper:nth-child(even){
+    flex-direction: row-reverse;
+}
+.impactCardWrapper:nth-child(even) .left{
+    margin-right: 0;
+    margin-left: 0%;
+}
+.impactCardWrapper .left{
+    margin-top: 0;
+    flex: 0 0 30%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.impactCardWrapper .right{
+    margin: 1em;
+    flex: 0 0 60%;
+}
+.impactCardWrapper .right .title{
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+    margin-bottom: 0;
+}
+.impactCardWrapper .right p{
+    text-align: center;
+    margin: 1em 0;
+}
+.impactCardWrapper .left img{
+    width: 170%;
+    height: 105%;
+    border-radius: 50%;
+}
+
+.aboutPageSection.impact{
+    text-align: center;
+}
+.aboutPageSection.impact h1.title{
+    color: #746CFE;
+    font-weight: 600;
+    font-size: 4em;
+    margin: 1em 0;
+}
+.aboutPageSection.impact h4.subTitle{
+    font-weight: 600;
+    font-size: 2em;
+}
+.aboutPageSection.impact .impactCardsContainer{
+    padding: 3em;
+    width: fit-content;
+    margin: 0 auto;
+}
+.aboutUsPage{
+    background-color:#E6F4EA;
+}
+.aboutUsHero{
+    background-image: url(./assets/images/adminsImage.png);
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+}
+.aboutUsHero .colourWrapper{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.153));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutUsHero .colourWrapper h1.title{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+.aboutUsHero .colourWrapper .vision{
+    display: flex;
+
+}
+.aboutUsHero .colourWrapper .vision p{
+    margin: 1em .5em;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+div.aboutUsText{
+    margin: 2em;
+    border-top: 1px solid #222036;
+    border-bottom: 1px solid #222036;
+    padding: 2em;
+}
+div.aboutUsText .textWrapper{
+    display: flex;
+    gap: 20px;
+    margin: 3em
+}
+div.aboutUsText .textWrapper .imageWrapper{
+    flex: 2 2 20%;
+}
+div.aboutUsText .textWrapper .imageWrapper img{
+    width: 100%;
+}
+div.aboutUsText .textWrapper p.text{
+    flex: 1 1 85%;
+    font-size: 1.5em;
+}
+div.team .colourWrapper{
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    padding: 3em 1em;
+    gap: 50px;
+    
+}
+div.team .colourWrapper .teamMember{
+    max-width: fit-content;
+    min-height: 200px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.team .colourWrapper .teamMember img{
+    max-width: 105px;
+    max-height: 105px;
+}
+div.team .colourWrapper .separator{
+    width: 4px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transform: rotateY(45deg);
+}
+@media screen and (max-width: 1180px){
+
+
+}
+
+@media screen and (max-width: 700px){
+    div.aboutUsText .textWrapper{
+    margin: 2em 0;
+}
+    div.aboutUsText .textWrapper p.text{
+        font-size: 1em;
+    }
+    .aboutUsHero .colourWrapper .vision{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    .aboutUsHero .colourWrapper .vision p{
+        text-align: center;
+        font-size: 1.5em;
+    }
+}

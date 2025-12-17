@@ -1,0 +1,222 @@
+/* hero section styles */
+.hero-section{
+    padding: 3em 3.5em;
+    background-color: #F0F8FF;
+    background-image: url(assets/images/Polygon\ 1.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 663px;
+}
+.hero-section h1.title{
+    text-transform: uppercase;
+    color: #3F3D56;
+    font-family: "Inter";
+    font-size: 40pt;
+    font-weight:normal;
+    text-align: center;
+}
+.hero-section .wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .8em;
+    align-items: center;
+}
+.hero-section .emergency-card{
+    border-radius: 20px;
+    box-shadow: 0,0,5px,gray;
+    background-color: white;
+    font-family: "Inter";
+    padding: 2em;
+    width: 38%;
+}
+.hero-section .emergency-card h3{
+    font-size: 40px;
+    font-weight: normal;
+    color: #2F2E41;
+    text-align: center;
+    margin-bottom: .4em;
+}
+.emergency-card p.top-container{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.emergency-card .top-container .avatar{
+    width: 53px;
+    margin: .5em;
+}
+.emergency-card .top-container span{
+    color: #597081;
+    font-size: 22px;
+}
+.emergency-card .contact-container .phone-no{
+    color: #FF6905;
+    font-size: 21px;
+    margin: 0 .5em;
+}
+.emergency-card .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.emergency-card .contact-container .name{
+    color: #5BC1AC;
+    font-size: 21px;
+    margin: 0 .5em;
+}
+.emergency-card p.bottom{
+    font-size: 22px;
+    color:#597081;
+}
+.hero-section .hero-illustration{
+    width: 37%;
+    position: relative;
+    top: -10%;
+    right: 8%;
+}
+
+/* safe space shelters styles */
+section.shelters{
+    background-color: black;
+    color: white;
+    padding: 2em 3.5em;
+    font-family: "Inter";
+    height: 429px;
+}
+.shelters .content{
+    margin-left: 60%;
+    width: fit-content;
+}
+.content .title{
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.content h5{
+    font-size: 24px;
+    font-family: "Inter";
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+.content label{
+    display: inline;
+    margin-right: 10px;
+}
+.content p#location{
+    display: inline;
+}
+.content p{
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+.content .button-wrapper{
+    margin-top: 3em;
+}
+.shelters .images-container{
+    position: relative;
+}
+.shelters .images-container .house{
+    display: inline;
+    position: absolute;
+    transition: 1s;
+}
+#house1{
+    translate:30%;
+    transform: rotateZ(-25deg);
+    top: 30px;
+}
+#house3{
+    translate: 112%;
+    top: 10px;
+}
+#house2{
+    translate: 200%;
+    top: 30px;
+    transform: rotateZ(25deg);
+}
+/* fascilities styles*/
+section.fascilities{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: "Inter";
+    
+}
+.fascilities .title{
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    margin: 1em 0;
+}
+.fascilities .left .card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px grey;
+    width: fit-content;
+    margin: 1em;
+    display: inline-block;
+}
+.fascilities .left .card .card-img{
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.fascilities .left .card .title{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+.fascilities .left .card p{
+    max-width: 188px;
+    text-align: center;
+    font-size: 12px;
+}
+.fascilities .left .card .get-map{
+    background-color: #5A6F80;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: .7em 0;
+    font-size: 14px;
+    margin-top: 1em;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.fascilities .right .map{
+    width: 100%;
+}
+/* contact section */
+section.contact{
+    background-color: #E6F4EA;
+    font-family: "Inter";
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.contact .form-wrapper{
+    background-image: url(assets/images/Group\ 22.svg);
+    background-repeat: no-repeat;
+    padding: 2em;
+}
+.form-wrapper form{
+    border-radius: 20px;
+    background-color: white;
+    padding: 1em;
+    width: 65%;
+    margin: 2em auto;
+    
+}
+.form-wrapper form title{
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+}
+.form-wrapper form input,.form-wrapper form textarea{
+    border: 1px solid #3F3D56;
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+    border-radius: 30px;
+    padding: 1.5em 3em;
+}
